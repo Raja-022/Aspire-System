@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<>();
+		ArrayList<String> duplicate = new ArrayList<>();
+		String str[] = {"Apple","Banana","Cherry","Apple","Banana","Date"};
+		 
+		for(String s:str){
+		    if(!list.contains(s)){
+		        list.add(s);
+		    }
+		    else{
+		      duplicate.add(s);
+		    }
+		    
+		}
+		System.out.println(duplicate);
+	}
+}
